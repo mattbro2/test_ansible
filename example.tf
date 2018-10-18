@@ -7,5 +7,6 @@ provider "aws" {
 resource "aws_instance" "tfauto_awesome" {
   ami           = "ami-06b5810be11add0e2"
   instance_type = "t2.micro"
+  key_name      = "tfauto_awesome"
 }
 
